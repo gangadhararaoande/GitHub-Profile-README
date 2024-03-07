@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./assets/codertocat.png');
+    width: 100%;
+    height: auto;
+    --cursor: url('./assets/cursor_images/1.png'),auto;
+    cursor: var(--cursor);
+  }
+  .container {
+    align-items: center;
+  }
+  #categories {
+    justify-content: center;
+    text-align: center;
+    border-radius: 2px solid gray;
+    margin-bottom: 20px;
+  }
+
+  button{
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 15px;
+    margin: 4px 14px;
+    border-radius: 5px ;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    background-color: #fdfdfd;
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
+  }
+  button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff06;
+    transform: translate(-100%);
+    transition: transform .3s ease-in-out;
+  }
+  button:hover:before{
+    transform: translate(0)
+  }
+/* CSS */
+button {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  /*color: var(--color);*/
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+button:active {
+  background: var(--color);
+  color: #fff;
+}
+  input{
+    justify-content: center;
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    color: #333;
+    height: 30px;
+    padding: 6px 20px;
+    border: 2px solid #ebebeb;
+    background-color: transparent;
+    border-radius: 4px;
+    overflow: visible;
+    line-height: 1.15;
+  }
+  input:hover{
+    background-color: #ff06;
+  }
+  input[type="text"]{
+    color: black;
+    padding-block: 1px;
+    padding-inline: 2px;
+  }
+  #cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    flex-wrap: wrap;
+   justify-content: center;
+    margin: 0 30px 0 30px;
+    grid-gap: 10px;
+  }
+  
+  .card {
+    position: relative;
+    width: 350px;
+    height: 180px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .card img {
+    transition: transform 1.5s;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card:hover img {
+    transform: translateY(-100%);
+  }
+  
+  .card .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover .info {
+    opacity: 1;
+  }
+
+  .card a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 518px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal img {
+    width: 800px;
+    height: auto;
+    max-height: 80vh;
+    margin-top: 5vh;
+  }
+  
+  .modal a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .modal p {
+    margin: 20px 0;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .github-link {
+    display: block;
+    position: fixed;
+    top: 3em;
+    right: -6.5em;
+    padding: 1em;
+    width: 20em;
+    text-align: center;
+    background-color: #333;
+    text-transform: uppercase;
+    font-size: .7em;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+}
+.visitors {
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    top: 2em;
+    left: -9.5em;
+    padding: .5em;
+    width: 30em;
+    text-align: center;
+    background-color: #333;
+    text-transform: uppercase;
+    font-size: .5em;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+}
+a {
+    background-color: transparent;
+}
+#contributions-number{
+    color: #fa3d66;
+    transition: 2.8s;
+    font-weight: bold;
+    font-size: 36px;
+}
+.column-right{
+    text-align: right;
+    margin-left: 26px;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin-right: 26px;
+}
+@media screen and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+    .github-link {
+        font-size: 1em;
+    }
+    .visitors{
+        font-size: 1em;
+    }
+}
