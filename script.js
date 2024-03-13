@@ -1,4 +1,17 @@
 const data = [ 
+/* Write your code here
+    {
+    categoryName: "Category Name",
+    list: [
+      {
+        githubUrl: "Your Github README URL",
+        nickName: "Your Name",
+        filePath: "assets/screenshots/yourprofileimg.png",
+        timestamp: convertToTimestamp("Date(06/03/2024) Time(16:32)"),
+      },
+    ],
+  },
+*/
    {
     categoryName: "Github Actions 🤖",
     list: [
