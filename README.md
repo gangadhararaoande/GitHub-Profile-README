@@ -11,6 +11,22 @@
 <a href="https://github.com/gangadhararaoande/GitHub-Profile-README/issues"><img src="https://img.shields.io/github/issues/gangadhararaoande/GitHub-Profile-README.svg" alt="Issues Badge"/></a>
 <a href="https://github.com/gangadhararaoande/GitHub-Profile-README/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/gangadhararaoande/GitHub-Profile-README.svg?color=2b9348"></a>
 <br>
+
+ <p align="center">
+  <a href="https://github.com/gangadhararaoande/GitHub-Profile-README" target="_blank" rel="noopener noreferrer">
+    <img style="padding: 5px; border-radius: 20px;" src="https://forthebadge.com/images/badges/built-with-love.svg" />
+ </a>
+  <a href="https://github.com/gangadhararaoande/GitHub-Profile-README" target="_blank" rel="noopener noreferrer">
+    <img style="padding: 5px; border-radius: 20px;" src="https://forthebadge.com/images/badges/open-source.svg" />
+ </a>
+ <br />
+ <a href="https://github.com/gangadhararaoande/GitHub-Profile-README" target="_blank" rel="noopener noreferrer">
+    <img style="padding: 5px; border-radius: 20px;" src="https://forthebadge.com/images/badges/check-it-out.svg" />
+ </a>
+  <a href="https://github.com/gangadhararaoande/GitHub-Profile-README" target="_blank" rel="noopener noreferrer">
+    <img style="padding: 5px; border-radius: 20px;" src="https://forthebadge.com/images/badges/built-by-developers.svg" />
+ </a>
+</p>
 <p align="center">
   <a href="https://github.com/gangadhararaoande"><img alt="Github - gangadhararaoande" src="https://img.shields.io/badge/GitHub-gangadhararaoande-181717?style=flat-square&logo=github"></a>
 </p> 
