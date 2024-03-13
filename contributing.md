@@ -4,7 +4,7 @@ Please ensure your pull request adheres to the following guidelines:
 
 - Create an [issue](https://github.com/gangadhararaoande/GitHub-Profile-README/issue), with the title as your name, and in the description put a screenshot of the customized GitHub profile page in the assets/screenshots/ (This will be needed in the next step)
 - Fork the project, using the top right corner button, that states `fork`
-- In the `script.js` file, add your own object to the **end of the file**. Your entry should be similar to this example:
+- In the `script.js` file, add your own object to the **start of the file**. Your entry should be similar to this example:
 ``` {
     categoryName: "Category Name",
     list: [
